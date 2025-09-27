@@ -1,0 +1,52 @@
+/* Basic layout */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #111;
+  background: #fafafa;
+}
+
+.section { padding: 2rem 1rem; max-width: 1000px; margin: 0 auto; }
+
+.site-header, .site-footer {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+}
+.site-header h1, .site-footer p { margin: 0; }
+
+.nav { margin-top: .5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.nav a { color: #fff; text-decoration: none; opacity: 0.9; }
+.nav a:hover { text-decoration: underline; opacity: 1; }
+
+/* Cards/grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card figcaption {
+  padding: .75rem 1rem;
+  font-size: .95rem;
+  color: #333;
+}
+
+/* Links in content */
+a { color: #0b5fff; }
+a:hover { text-decoration: underline; }
